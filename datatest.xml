@@ -1,20 +1,5 @@
 <popcorn> 
 	<manifest>
-		
-		
-		
-<attributions> 
-
-<attribution id="caligari" nameofwork="The Cabinet of Dr. Caligari (1920)" copyrightholder="Goldwyn Distributing Company" copyrightholderurl="" nameofworkurl="http://en.wikipedia.org/wiki/Cabinet_of_Dr._Caligari"/>
-<attribution id="famousfilms" nameofwork="Famous Films Productions, Inc." copyrightholder="Goldwyn Distributing Company" copyrightholderurl="" nameofworkurl=""/>
-<attribution id="kraus" nameofwork="Werner Kraus, " copyrightholder="" copyrightholderurl="" nameofworkurl="http://en.wikipedia.org/wiki/Werner_Krauss"/>
-<attribution id="veidt" nameofwork="Conrad Veidt, " copyrightholder="" copyrightholderurl="" nameofworkurl="http://en.wikipedia.org/wiki/Conrad_Veidt"/>
-<attribution id="dagover" nameofwork="Lil Dagover, " copyrightholder="" copyrightholderurl="" nameofworkurl="http://en.wikipedia.org/wiki/Lil_Dagover"/>
-<attribution id="feher" nameofwork="Hans Feher, " copyrightholder="" copyrightholderurl="" nameofworkurl="http://www.imdb.com/name/nm0270416/"/>
-<attribution id="twardowsky" nameofwork="Hans V. Twardowsky" copyrightholder="" copyrightholderurl="" nameofworkurl="http://www.imdb.com/name/nm0903145/"/>
-<attribution id="wiene" nameofwork="Robert Wiene" copyrightholder="" copyrightholderurl="" nameofworkurl="http://en.wikipedia.org/wiki/Robert_Wiene"/>
-
-</attributions> 
 
 <articles> 
 
@@ -96,26 +81,7 @@
 			<footnote in="01:12:00" out="01:18:00" target="videoattribution">
 				Footnote 6 
 			</footnote>			
-		</footnotes> 
-
-		<resources>
-			
-			
-
-	       <attribution in="00:01:10" out="00:07:00" target="footnote" resourceid="caligari"/>
-			<attribution in="00:07:01" out="00:14:00" target="footnote" resourceid="famousfilms"/>
-
-			<attribution in="00:14:01" out="00:28:00" target="footnote" resourceid="kraus"/>
-			<attribution in="00:14:01" out="00:28:00" target="footnote" resourceid="veidt"/>
-			<attribution in="00:14:01" out="00:28:00" target="footnote" resourceid="dagover"/>
-			<attribution in="00:14:01" out="00:28:00" target="footnote" resourceid="feher"/>
-			<attribution in="00:14:01" out="00:28:00" target="footnote" resourceid="twardowsky"/>
-
-			<attribution in="00:28:01" out="00:39:00" target="footnote" resourceid="wiene"/>			
-			
-			
-			
-		</resources> 
+		</footnotes>
 
 		<transcripts>
 			<transcript in="00:00:00:00" out="00:00:01:00" tId="0">SUP	</transcript>
