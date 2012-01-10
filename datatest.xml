@@ -101,7 +101,6 @@
 		<resources>
 			
 			
-	     <wikipedia in="00:00:01:01" out="00:00:13:00" resourceid="donald" numberOfWords="350" target="wikidiv"/> 
 
 	       <attribution in="00:01:10" out="00:07:00" target="footnote" resourceid="caligari"/>
 			<attribution in="00:07:01" out="00:14:00" target="footnote" resourceid="famousfilms"/>
@@ -119,7 +118,7 @@
 		</resources> 
 
 		<transcripts>
-			<transcript in="00:00:00:00" out="00:00:01:00" tId="0">SUP</transcript>
+			<transcript in="00:00:00:00" out="00:00:01:00" tId="0">SUP	</transcript>
 			<transcript in="00:00:02:00" out="00:00:04:00" tId="1"></transcript>
 			<transcript in="00:00:04:00" out="00:00:08:00" tId="2"></transcript>
 			<transcript in="00:00:26:00" out="00:00:34:00" tId="3"></transcript>
