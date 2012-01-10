@@ -1,60 +1,7 @@
 <popcorn> 
 	<manifest>
 
-<articles> 
-
-<resource id="donald" src="http://en.wikipedia.org/wiki/Donald_Duck" description="Donald Duck"/> 
-<resource id="heighho" src="http://en.wikipedia.org/wiki/Heigh-Ho" description="Heigh Ho"/> 
-<resource id="pete" src="http://en.wikipedia.org/wiki/Pete_%28Disney_character%29" description="Pete"/> 
-<resource id="plutocracy" src="http://en.wikipedia.org/wiki/Plutocracy" description="plutocracy"/> 
-<resource id="glennbeck" src="http://en.wikipedia.org/wiki/Glenn_Beck" description="Glenn Beck"/> 
-<resource id="teaparty" src="http://en.wikipedia.org/wiki/Tea_Party_movement" description="Tea Party"/> 
-<resource id="mccarthy" src="http://en.wikipedia.org/wiki/Joseph_McCarthy" description="Joseph McCarthy"/> 
-<resource id="mccarthyism" src="http://en.wikipedia.org/wiki/McCarthyism" description="McCarthyism"/> 
-<resource id="derfuehrer" src="http://en.wikipedia.org/wiki/Der_Fuehrer%27s_Face" description="Der Fuehrer's Face"/> 
-
-<resource id="panchito" src="http://en.wikipedia.org/wiki/Panchito_Pistoles" description="Panchito Pistoles"/> 
-<resource id="subprime" src="http://en.wikipedia.org/wiki/Subprime_mortgage_crisis" description="Subprime mortgage crisis"/> 
-<resource id="foreclosurecrisis" src="http://en.wikipedia.org/wiki/2010_United_States_foreclosure_crisis" description="2010 United States foreclosure crisis"/> 
-<resource id="ethnic" src="http://en.wikipedia.org/wiki/Ethnic_stereotype" description="Ethnic stereotype"/> 
-<resource id="scapegoat" src="hhttp://en.wikipedia.org/wiki/Scapegoating" description="Scapegoating"/> 
-<resource id="nationalism" src="http://en.wikipedia.org/wiki/Nationalism" description="Nationalism"/> 
-<resource id="fearmongering" src="http://en.wikipedia.org/wiki/Fear_mongering" description="Fear mongering"/> 
-<resource id="unemploymentrate" src="http://en.wikipedia.org/wiki/Effective_unemployment_rate" description="Effective unemployment rate"/> 
-<resource id="wwii" src="http://en.wikipedia.org/wiki/Walt_Disney%27s_World_War_II_propaganda_production
-" description="World War II Disney propaganda"/> 
-
-<resource id="xenophobia" src="http://en.wikipedia.org/wiki/Xenophobia" description="Xenophobia"/> 
-<resource id="tarp" src="http://en.wikipedia.org/wiki/Troubled_Asset_Relief_Program" description="TARP"/> 
-<resource id="newspiritwiki" src="http://en.wikipedia.org/wiki/The_New_Spirit" description="The New Spirit"/> 
-<resource id="antimexican" src="http://en.wikipedia.org/wiki/Anti-Mexican_sentiment" description="Anti-Mexican sentiment"/> 
-<resource id="hispanophobia" src="http://en.wikipedia.org/wiki/Hispanophobia" description="Hispanophobia"/> 
-<resource id="ajax" src="http://en.wikipedia.org/wiki/Ajax_%28Disney%29" description="Ajax"/> 
-<resource id="mirror" src="http://en.wikipedia.org/wiki/Thru_the_Mirror" description="mirror"/> 
-<resource id="snakeoil" src="http://en.wikipedia.org/wiki/Snake_oil" description="Snake oil"/> 
-<resource id="extremism" src="http://en.wikipedia.org/wiki/Extremism" description="Extremism"/> 
-
-<resource id="victimblaming" src="http://en.wikipedia.org/wiki/Victim_blaming" description="Victim blaming"/> 
-<resource id="paranoia" src="http://en.wikipedia.org/wiki/Paranoia" description="Paranoia"/> 
-<resource id="apocalypticism" src="http://en.wikipedia.org/wiki/Apocalypticism" description="Apocalypticism"/> 
-<resource id="apocalyptic" src="http://en.wikipedia.org/wiki/Apocalyptic_and_post-apocalyptic_fiction" description="Apocalyptic fiction"/> 
-<resource id="compositing" src="http://en.wikipedia.org/wiki/Compositing" description="Compositing"/> 
-<resource id="repossession" src="http://en.wikipedia.org/wiki/Repossession" description="Repossession"/> 
-<resource id="goofy" src="http://en.wikipedia.org/wiki/Goofy" description="Goofy"/> 
-<resource id="mickey" src="http://en.wikipedia.org/wiki/Mickey_Mouse" description="Mickey"/> 
-<resource id="pluto" src="http://en.wikipedia.org/wiki/Pluto" description="Pluto"/> 
-<resource id="bullying" src="http://en.wikipedia.org/wiki/Bullying" description="Bullying"/> 
-
-<resource id="bluecollar" src="http://en.wikipedia.org/wiki/Blue-collar_worker" description="Blue-collar worker"/> 
-<resource id="reactionary" src="http://en.wikipedia.org/wiki/Reactionary" description="Reactionary"/> 
-<resource id="talkradio" src="http://en.wikipedia.org/wiki/Conservative_talk" description="Conservative talk"/> 
-<resource id="planet" src="http://en.wikipedia.org/wiki/Planet_of_the_Apes_%28novel%29" description="Planet of the Apes"/> 
-<resource id="ghostoffuture" src="http://en.wikipedia.org/wiki/Ghost_of_Christmas_Yet_to_Come" description="Ghost of Christmas Yet to Come"/> 
-<resource id="bootstrapping" src="http://en.wikipedia.org/wiki/Bootstrapping" description="Bootstrapping"/> 
-<resource id="transformativeness" src="http://en.wikipedia.org/wiki/Transformativeness" description="Transformativeness"/> 
-<resource id="discouraged" src="http://en.wikipedia.org/wiki/Discouraged_worker" description="Discouraged worker"/> 
-<resource id="repossession" src="http://en.wikipedia.org/wiki/Repossession" description="Repossession"/> 
-</articles>		
+	
 		
 		
 		
