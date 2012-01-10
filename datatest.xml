@@ -1,34 +1,9 @@
 <popcorn> 
 	<manifest>
 
-	
-		
-		
-		
 	</manifest> 
 
-	<timeline> 
-
-		<footnotes>
-			<footnote in="00:01:10" out="00:14:00" target="videoattribution" id="1">
-				Footnote 1
-			</footnote> 
-			<footnote in="00:14:01" out="00:28:00" target="videoattribution" id="2">
-				Footnote 2
-			</footnote>
-			<footnote in="00:28:01" out="00:39:10" target="videoattribution">
-				Footnote 3
-			</footnote>
-			<footnote in="00:41:00" out="01:03:00" target="videoattribution">
-				Footnote 4
-			</footnote>
-			<footnote in="01:12:00" out="01:18:00" target="videoattribution">
-				Footnote 5
-			</footnote>
-			<footnote in="01:12:00" out="01:18:00" target="videoattribution">
-				Footnote 6 
-			</footnote>			
-		</footnotes>
+	<timeline>
 
 		<transcripts>
 			<transcript in="00:00:00:00" out="00:00:01:00" tId="0">SUP	</transcript>
