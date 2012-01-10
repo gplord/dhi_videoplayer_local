@@ -1,12 +1,11 @@
 <popcorn> 
 	<manifest>
-
 	</manifest> 
 
 	<timeline>
 
 		<transcripts>
-			<transcript in="00:00:00:00" out="00:00:01:00" tId="0">SUP	</transcript>
+			<transcript in="00:00:00:00" out="00:00:01:00" tId="0"></transcript>
 			<transcript in="00:00:02:00" out="00:00:04:00" tId="1"></transcript>
 			<transcript in="00:00:04:00" out="00:00:08:00" tId="2"></transcript>
 			<transcript in="00:00:26:00" out="00:00:34:00" tId="3"></transcript>
