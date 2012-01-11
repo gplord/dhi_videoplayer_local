@@ -126,11 +126,48 @@ $(function() {
 </script>
 
 
+<script>
+
+function loadXMLDoc(dname) {
+	if (window.XMLHttpRequest) {
+		xhttp=new XMLHttpRequest();
+	} else {
+		xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xhttp.open("GET",dname,false);
+	xhttp.send("");
+	return xhttp.responseXML;
+}
+
+function displayResult() {
+	xml=loadXMLDoc("datatest.xml");
+	xsl=loadXMLDoc("test.xsl");
+	// code for IE
+	if (window.ActiveXObject) {
+		ex=xml.transformNode(xsl);
+		document.getElementById("rolling_transcript").innerHTML=ex;
+	}
+	// code for Mozilla, Firefox, Opera, etc.
+	else if (document.implementation && document.implementation.createDocument)	{
+		xsltProcessor=new XSLTProcessor();
+		xsltProcessor.importStylesheet(xsl);
+		resultDocument = xsltProcessor.transformToFragment(xml,document);
+		document.getElementById("rolling_transcript").appendChild(resultDocument);
+	}
+}
+
+</script>
+
   <!-- Include the VideoJS Stylesheet -->
 	<link rel="stylesheet" href="video-js.css" type="text/css" media="screen" title="Video JS">
 </head>
 
-  <body>
+  <body onload="displayResult()">
+	
+		
+			<div id="example" style="width: 400px; border:1px solid lime; position: absolute; top: 50px; color: lime">
+			</div>
+	
   
   <section id="wrapper">
       <header>
@@ -197,24 +234,10 @@ $(function() {
                      <div class="inactive">
                    </div></div>
        </aside>
-				        
-	    <!--<aside id="sources">
-                  <img src="images/logo_audio.png" alt="audio">
-
-                  <img src="images/audio.png" alt="audio" class="icons">
-                  <div class="content" id="audioattribution"><div class="overlay"></div><div class="inactive"></div></div>
-
-		</aside>
-				        
-	   <aside id="sources">
-                  <img src="images/logo_wiki2.png" alt="Wikipedia">
-                  <img src="images/wikipedia.png" alt="wikipedia" class="icons">
-                  <div class="content" id="wikidiv"><div class="overlay"></div><div class="inactive"></div></div>
-
-	 </aside>-->
 	
 		<div id="rolling_transcript">
-			<table cellpadding="0" cellspacing="0">
+			
+			<!--<table cellpadding="0" cellspacing="0">
 				
 				<tr class="audioGroup"><td id="tLine0" class="highlighted">
 					<div class="jp"><strong><em>Benshi Narration (Musei)</em></strong></div>
@@ -371,7 +394,7 @@ $(function() {
 					<div class="en">And he finally lost power and fell down onto the ground.</div>
 				</td></tr>
 				
-			</table>
+			</table>-->
 		</div>
 				        
    </div>

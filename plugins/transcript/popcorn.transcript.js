@@ -38,7 +38,7 @@
         start    : {elem:'input', type:'text', label:'In'},
         end      : {elem:'input', type:'text', label:'Out'},
         text     : {elem:'input', type:'text', label:'Text'},
-		tId		 : 'tId'
+		tId		 : {elem:'input', type:'text', label:'tId'}
       }
     },
     _setup: function(options) {

@@ -5,9 +5,9 @@
 	<timeline>
 
 		<transcripts>
-			<transcript in="00:00:00:00" out="00:00:01:00" tId="0"></transcript>
-			<transcript in="00:00:02:00" out="00:00:04:00" tId="1"></transcript>
-			<transcript in="00:00:04:00" out="00:00:08:00" tId="2"></transcript>
+			<transcript in="00:00:00:00" out="00:00:14:00" tId="0"></transcript>
+			<transcript in="00:00:14:00" out="00:00:18:00" tId="1"></transcript>
+			<transcript in="00:00:20:00" out="00:00:25:00" tId="2"></transcript>
 			<transcript in="00:00:26:00" out="00:00:34:00" tId="3"></transcript>
 			<transcript in="00:00:42:00" out="00:00:50:00" tId="4"></transcript>
 			<transcript in="00:00:52:00" out="00:00:57:00" tId="5"></transcript>
@@ -37,6 +37,130 @@
 			<transcript in="00:03:57:00" out="00:04:01:30" tId="29"></transcript>
 			<transcript in="00:04:02:00" out="00:04:08:00" tId="30"></transcript>
 		</transcripts>
+
+		<transcriptLines>
+			
+			<lineGroup id="1">
+				<line lang="en">When Francis is peeking in the window</line>
+				<line lang="jp">馬車の窓から覗くと</line>
+			</lineGroup>
+			<lineGroup id="2">
+				<line lang="en">the doctor is sleeping with his chin rested on his cane.</line>
+				<line lang="jp">博士は杖にあごを載せて眠っている</line>
+			</lineGroup>
+			<lineGroup id="3">
+				<line lang="en">The somnambulist Cesaré was surely inside the coffin-like box.</line>
+				<line lang="jp">棺桶のような箱の中には、例の眠り男のセザーレが確かにおりました</line>
+			</lineGroup>
+			<lineGroup id="4">
+				<line lang="en">However, a monster that looks exactly like Cesaré</line>
+				<line lang="jp">にも関わらず，セザーレとそっくりの怪物が，</line>
+			</lineGroup>
+			<lineGroup id="5">
+				<line lang="en">has just sneaked into Dr. Olsen’s daughter’s bedroom.</line>
+				<line lang="jp">令嬢の寝室へ忍んで参りました。</line>
+			</lineGroup>
+			<lineGroup id="6">
+				<line lang="en">He was going to stab the lady deeply with a sharp dagger</line>
+				<line lang="jp">鋭利な刃物をぐさりとただ一突き</line>
+			</lineGroup>
+			<lineGroup id="7">
+				<line lang="en">At the instant Cesaré flung up the knife</line>
+				<line lang="jp">振り上げた瞬間に</line>
+			</lineGroup>
+			<lineGroup id="8">
+				<line lang="en">his attitude changed suddenly.</line>
+				<line lang="jp">セザーレの様子が変になりました。</line>
+			</lineGroup>
+			<lineGroup id="9">
+				<line lang="en">At the moment when he saw the face of the beautiful sleeping lady.</line>
+				<line lang="jp">美しい令嬢の寝顔を見た瞬間に</line>
+			</lineGroup>
+			<lineGroup id="10">
+				<line lang="en">After all, the masculine blood was running in Cesaré's body.</line>
+				<line lang="jp">セザーレの体にはやはり男性の血が流れていました。</line>
+			</lineGroup>
+			<lineGroup id="11">
+				<line lang="en">In spite of himself, he extends his arms.</line>
+				<line lang="jp">思わず手を差し伸べ </line>
+			</lineGroup>
+			<lineGroup id="12">
+				<line lang="en">Screaming!</line>
+				<line lang="jp">悲鳴を上げて</line>
+			</lineGroup>
+			<lineGroup id="13">
+				<line lang="en">A screaming daughter! He clasps her to his side with ease.</line>
+				<line lang="jp">うち騒ぐ令嬢を軽々と横抱きにいたしまして</line>
+			</lineGroup>
+			<lineGroup id="14">
+				<line lang="en"><em>What was that?</em></line>
+				<line lang="jp">なんだか </line>
+			</lineGroup>
+			<lineGroup id="15">
+				<line lang="en"><em>Certainly, just now, we heard the scream of a woman.</em></line>
+				<line lang="jp">たしかに今，女の悲鳴が</line>
+			</lineGroup>
+			<lineGroup id="16">
+				<line lang="en"><em>Ah!</em></line>
+				<line lang="jp">あ！</line>
+			</lineGroup>
+			<lineGroup id="17">
+				<line lang="en"><em>How is our young mistress doing?</em></line>
+				<line lang="jp">お嬢さんどうしてる？ </line>
+			</lineGroup>
+			<lineGroup id="18">
+				<line lang="en"><em>Ah! Over there! There he goes!</em></line>
+				<line lang="jp">ああ！あすこだ！あすこをいくぞ！</line>
+			</lineGroup>
+			<lineGroup id="19">
+				<line lang="en"><em>There is no way humanly possible!</em></line>
+				<line lang="jp">到底普通の人間業とは思えないので </line>
+			</lineGroup>
+			<lineGroup id="20">
+				<line lang="en">While clasping the lady to his side</line>
+				<line lang="jp">令嬢の体を横抱きにしたまま</line>
+			</lineGroup>
+			<lineGroup id="21">
+				<line lang="en">a strange man is fleeing along the rooftops.</line>
+				<line lang="jp">屋根伝いにあやしの者が逃げていきます </line>
+			</lineGroup>
+			<lineGroup id="22">
+				<line lang="en">Still, Dr. Caligari is sleeping.</line>
+				<line lang="jp">カリガリー博士は相変わらず眠っている</line>
+			</lineGroup>
+			<lineGroup id="23">
+				<line lang="en">And the sleeping man is sleeping in that box.</line>
+				<line lang="jp">眠り男は例の箱の中で眠っている、</line>
+			</lineGroup>
+			<lineGroup id="24">
+				<line lang="en">However, a monster that looks just like the sleeping man,</line>
+				<line lang="jp">しかるに眠り男とそっくりの怪物が </line>
+			</lineGroup>
+			<lineGroup id="25">
+				<line lang="en">he has kidnapped the lady and fled.</line>
+				<line lang="jp">令嬢をさらって逃げ出したのです。</line>
+			</lineGroup>
+			<lineGroup id="26">
+				<line lang="en">But on the way, having run out of steam</line>
+				<line lang="jp">だが途中まで来ると力つきて </line>
+			</lineGroup>
+			<lineGroup id="27">
+				<line lang="en">the monster deserted the lady and ran away.</line>
+				<line lang="jp">その怪物は令嬢を道ばたに、捨てたまま，逃げてしまったのです。</line>
+			</lineGroup>
+			<lineGroup id="28">
+				<line lang="en">For a little while</line>
+				<line lang="jp">なおもしばらく</line>
+			</lineGroup>
+			<lineGroup id="29">
+				<line lang="en">the monster that resembled Cesaré was walloping.</line>
+				<line lang="jp">セザーレによく似た怪物は </line>
+			</lineGroup>
+			<lineGroup id="30">
+				<line lang="en">And he finally lost power and fell down onto the ground.</line>
+				<line lang="jp">ヨタヨタ歩き回っていましたが遂に力つきて倒れてしまった。</line>
+			</lineGroup>
+		</transcriptLines>
 
 	</timeline> 
 </popcorn>
