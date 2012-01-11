@@ -169,15 +169,7 @@ function displayResult() {
 	// After parsing XML, provide click function for each transcript line group set
 	$(".transcriptLineGroup").click(function() {
 		
-		var timecode = this.getAttribute("data-time");
-		
-		// convert (wibbly-wobbly) timecode to milliseconds
-		var timeyWimey = timecode.split(":");	
-		var sec = parseInt(timeyWimey[2]);
-		var min = parseInt(timeyWimey[1])*60;
-		var hrs = parseInt(timeyWimey[0])*3600;
-		var timeInMs = sec + min + hrs;
-		
+		var timeInMs = this.getAttribute("data-time-in-ms");		
 		var video = document.getElementsByTagName("video")[0];
 		video.currentTime = timeInMs; 
 		video.play();
