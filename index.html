@@ -122,7 +122,16 @@ $(function() {
 	$("#tLine28").click(function () {video.currentTime = 236;video.play();});
 	$("#tLine29").click(function () {video.currentTime = 237;video.play();});
 	$("#tLine30").click(function () {video.currentTime = 242;video.play();});
+	
+	
+	$(".transcriptLineGroup").click(function() {
+		alert(this.id);
+	});
+	
+	$("#tLine0").click(function () { alert("HI") });
+	
 });
+
 </script>
 
 
@@ -142,11 +151,13 @@ function loadXMLDoc(dname) {
 function displayResult() {
 	xml=loadXMLDoc("datatest.xml");
 	xsl=loadXMLDoc("test.xsl");
+	
 	// code for IE
 	if (window.ActiveXObject) {
 		ex=xml.transformNode(xsl);
 		document.getElementById("rolling_transcript").innerHTML=ex;
 	}
+	
 	// code for Mozilla, Firefox, Opera, etc.
 	else if (document.implementation && document.implementation.createDocument)	{
 		xsltProcessor=new XSLTProcessor();
@@ -154,6 +165,25 @@ function displayResult() {
 		resultDocument = xsltProcessor.transformToFragment(xml,document);
 		document.getElementById("rolling_transcript").appendChild(resultDocument);
 	}
+	
+	// After parsing XML, provide click function for each transcript line group set
+	$(".transcriptLineGroup").click(function() {
+		
+		var timecode = this.getAttribute("data-time");
+		
+		// convert (wibbly-wobbly) timecode to milliseconds
+		var timeyWimey = timecode.split(":");	
+		var sec = parseInt(timeyWimey[2]);
+		var min = parseInt(timeyWimey[1])*60;
+		var hrs = parseInt(timeyWimey[0])*3600;
+		var timeInMs = sec + min + hrs;
+		
+		var video = document.getElementsByTagName("video")[0];
+		video.currentTime = timeInMs; 
+		video.play();
+		
+	});
+	
 }
 
 </script>
@@ -162,12 +192,7 @@ function displayResult() {
 	<link rel="stylesheet" href="video-js.css" type="text/css" media="screen" title="Video JS">
 </head>
 
-  <body onload="displayResult()">
-	
-		
-			<div id="example" style="width: 400px; border:1px solid lime; position: absolute; top: 50px; color: lime">
-			</div>
-	
+  <body onload="displayResult()">	
   
   <section id="wrapper">
       <header>
