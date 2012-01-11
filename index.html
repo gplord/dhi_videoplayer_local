@@ -1,78 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="utf-8">
-  	<title>Comparative Japanese Film Archive - Proof of Concept</title>
- 	 <link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+<head>
+<meta charset="utf-8">
+<title>Comparative Japanese Film Archive - Proof of Concept</title>
 
-	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+<link rel="stylesheet" href="video-js.css" type="text/css" media="screen" title="Video JS">
 
- 	 <script src="video.js" type="text/javascript" charset="utf-8"></script>
- 	 <script src="popcorn.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
 
-         <script src="plugins/footnote/popcorn.footnote.js"></script>
-         <script src="plugins/transcript/popcorn.transcript.js"></script>
+<script src="video.js" type="text/javascript" charset="utf-8"></script>
+<script src="popcorn.js" type="text/javascript" charset="utf-8"></script>
 
-         <script src="parsers/parserXML/popcorn.parseXML.js"></script>
+<script src="plugins/footnote/popcorn.footnote.js"></script>
+<script src="plugins/transcript/popcorn.transcript.js"></script>
 
- 	 <script type="text/javascript">
-    // Must come after the video.js library
+<script src="parsers/parserXML/popcorn.parseXML.js"></script>
 
-    // Add VideoJS to all video tags on the page when the DOM is ready
-    VideoJS.setupAllWhenReady();
+<script type="text/javascript">
+	// Must come after the video.js library
 
-    /* ============= OR ============ */
-
-    // Setup and store a reference to the player(s).
-    // Must happen after the DOM is loaded
-    // You can use any library's DOM Ready method instead of VideoJS.DOMReady
-
-    /*
-    VideoJS.DOMReady(function(){
-      
-      // Using the video's ID or element
-      var myPlayer = VideoJS.setup("example_video_1");
-      
-      // OR using an array of video elements/IDs
-      // Note: It returns an array of players
-      var myManyPlayers = VideoJS.setup(["example_video_1", "example_video_2", video3Element]);
-
-      // OR all videos on the page
-      var myManyPlayers = VideoJS.setup("All");
-
-      // After you have references to your players you can...(example)
-      myPlayer.play(); // Starts playing the video for this player.
-    });
-    */
-
-    /* ========= SETTING OPTIONS ========= */
-
-    // Set options when setting up the videos. The defaults are shown here.
-
-    /*
-    VideoJS.setupAllWhenReady({
-      controlsBelow: false, // Display control bar below video instead of in front of
-      controlsHiding: true, // Hide controls when mouse is not over the video
-      defaultVolume: 0.85, // Will be overridden by user's last volume if available
-      flashVersion: 9, // Required flash version for fallback
-      linksHiding: true // Hide download links when video is supported
-    });
-    */
-
-    // Or as the second option of VideoJS.setup
-    
-    /*
-    VideoJS.DOMReady(function(){
-      var myPlayer = VideoJS.setup("example_video_1", {
-        // Same options
-      });
-    });
-    */
+	// Add VideoJS to all video tags on the page when the DOM is ready
+	VideoJS.setupAllWhenReady();
 
 	var highlightedLine = 0;
-	
+
 	function goToLine(num) {
 		$("#tLine"+highlightedLine).toggleClass('highlighted');
 		highlightedLine = num;
@@ -81,83 +35,36 @@
 		var pos = $("#tLine"+num).position().top;
 		$("#rolling_transcript").scrollTop(pos);
 	}
-	
+
 	$(function() {
 		$('a.lightbox').lightBox(); // Select all links with lightbox class
 	});
 
-  </script>
-
-<script type="text/javascript">
-$(function() {
-	var video = document.getElementsByTagName("video")[0];
-	$("#tLine0").click(function () {video.currentTime = 0; video.play();});
-	$("#tLine1").click(function () {video.currentTime = 14;video.play();});
-	$("#tLine2").click(function () {video.currentTime = 20;video.play();});
-	$("#tLine3").click(function () {video.currentTime = 26;video.play();});
-	$("#tLine4").click(function () {video.currentTime = 42;video.play();});
-	$("#tLine5").click(function () {video.currentTime = 52;video.play();});
-	$("#tLine6").click(function () {video.currentTime = 90;video.play();});
-	$("#tLine7").click(function () {video.currentTime = 98;video.play();});
-	$("#tLine8").click(function () {video.currentTime = 101;video.play();});
-	$("#tLine9").click(function () {video.currentTime = 108;video.play();});
-	$("#tLine10").click(function () {video.currentTime = 114;video.play();});
-	$("#tLine11").click(function () {video.currentTime = 119;video.play();});
-	$("#tLine12").click(function () {video.currentTime = 131;video.play();});
-	$("#tLine13").click(function () {video.currentTime = 136;video.play();});
-	$("#tLine14").click(function () {video.currentTime = 145;video.play();});
-	$("#tLine15").click(function () {video.currentTime = 146;video.play();});
-	$("#tLine16").click(function () {video.currentTime = 149;video.play();});
-	$("#tLine17").click(function () {video.currentTime = 152;video.play();});
-	$("#tLine18").click(function () {video.currentTime = 163;video.play();});
-	$("#tLine19").click(function () {video.currentTime = 168;video.play();});
-	$("#tLine20").click(function () {video.currentTime = 174;video.play();});
-	$("#tLine21").click(function () {video.currentTime = 178;video.play();});
-	$("#tLine22").click(function () {video.currentTime = 188;video.play();});
-	$("#tLine23").click(function () {video.currentTime = 191;video.play();});
-	$("#tLine24").click(function () {video.currentTime = 196;video.play();});
-	$("#tLine25").click(function () {video.currentTime = 200;video.play();});
-	$("#tLine26").click(function () {video.currentTime = 213;video.play();});
-	$("#tLine27").click(function () {video.currentTime = 218;video.play();});
-	$("#tLine28").click(function () {video.currentTime = 236;video.play();});
-	$("#tLine29").click(function () {video.currentTime = 237;video.play();});
-	$("#tLine30").click(function () {video.currentTime = 242;video.play();});
-	
-	
-	$(".transcriptLineGroup").click(function() {
-		alert(this.id);
-	});
-	
-	$("#tLine0").click(function () { alert("HI") });
-	
-});
-
 </script>
-
 
 <script>
 
-function loadXMLDoc(dname) {
-	if (window.XMLHttpRequest) {
-		xhttp=new XMLHttpRequest();
-	} else {
-		xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	function loadXMLDoc(dname) {
+		if (window.XMLHttpRequest) {
+			xhttp=new XMLHttpRequest();
+		} else {
+			xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xhttp.open("GET",dname,false);
+		xhttp.send("");
+		return xhttp.responseXML;
 	}
-	xhttp.open("GET",dname,false);
-	xhttp.send("");
-	return xhttp.responseXML;
-}
 
-function displayResult() {
-	xml=loadXMLDoc("datatest.xml");
-	xsl=loadXMLDoc("test.xsl");
-	
-	// code for IE
-	if (window.ActiveXObject) {
+	function displayResult() {
+		xml=loadXMLDoc("datatest.xml");
+		xsl=loadXMLDoc("test.xsl");
+
+		// code for IE
+		if (window.ActiveXObject) {
 		ex=xml.transformNode(xsl);
 		document.getElementById("rolling_transcript").innerHTML=ex;
 	}
-	
+
 	// code for Mozilla, Firefox, Opera, etc.
 	else if (document.implementation && document.implementation.createDocument)	{
 		xsltProcessor=new XSLTProcessor();
@@ -165,42 +72,37 @@ function displayResult() {
 		resultDocument = xsltProcessor.transformToFragment(xml,document);
 		document.getElementById("rolling_transcript").appendChild(resultDocument);
 	}
-	
+
 	// After parsing XML, provide click function for each transcript line group set
 	$(".transcriptLineGroup").click(function() {
-		
 		var timeInMs = this.getAttribute("data-time-in-ms");		
 		var video = document.getElementsByTagName("video")[0];
 		video.currentTime = timeInMs; 
 		video.play();
-		
 	});
-	
+
 }
 
 </script>
-
-  <!-- Include the VideoJS Stylesheet -->
-	<link rel="stylesheet" href="video-js.css" type="text/css" media="screen" title="Video JS">
 </head>
 
-  <body onload="displayResult()">	
-  
-  <section id="wrapper">
-      <header>
-      
-<!-- Add your own URL here -->
-      <div id="title">
-		<ul id="nav">
-			<li><a href="about.html">About</a></li>
-			<li><a href="index.html">Demo</a></li>
-			<li><a href="team.html">Project Team</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-      </div>
-      
-      </header>
-	
+<body onload="displayResult()">	
+
+<section id="wrapper">
+
+	<header>
+
+		<div id="title">
+			<ul id="nav">
+				<li><a href="about.html">About</a></li>
+				<li><a href="index.html">Demo</a></li>
+				<li><a href="team.html">Project Team</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+	</header>
+
 	<div id="browser_message">
 		<strong>This demo requires HTML5 and is designed to work with the most recent versions of Chrome and Safari.</strong>  If you do not see a playable video object below, please use one of these browsers or upgrade your browser to the latest version.
 	</div>
@@ -210,211 +112,50 @@ function displayResult() {
 		<h2>The Cabinet of Dr. Caligari</h2>
 	</div>
 
-<!-- Start Left Column -->
-  <div id="leftcontent">
-    <article id="videobox">
-         <!-- Begin VideoJS -->
- <div class="video-js-box">
+	<!-- Start Left Column -->
+	<div id="leftcontent">
+		<article id="videobox">
 
-	<video id="video" class="video-js" width="320" height="240" controls="controls" preload="auto" poster="images/poster.jpg" data-timeline-sources="datatest.xml">
-		<source src="caligari_1_vas.mov">
-    </video>  
+			<!-- Begin VideoJS -->
+			<div class="video-js-box">
 
-  </div>
-  <!-- End VideoJS -->
-        
-        </article>
+				<video id="video" class="video-js" width="320" height="240" controls="controls" preload="auto" poster="images/poster.jpg" data-timeline-sources="datatest.xml">
+					<source src="caligari_1_vas.mov">
+				</video>  
 
-      <aside id="sources">
+			</div>
+			<!-- End VideoJS -->
 
-                  <!--<img src="images/logo_notes.png" alt="footnotes">-->
-				<h3>Footnotes &amp; Annotations</h3>
-				<img src="images/video.png" alt="video" class="icons">
-                  <div class="content" id="footnote"><div class="overlay"></div><div class="inactive"></div></div>
-       </aside>
-				        
-  </div>
-     <!-- Start Right Column -->
-     
-   <div id="rightcontent">
-        
-      
-        <aside id="sources">
-                  <!--<img src="images/logo_video.png" alt="video">-->
-				<h4>Transcription</h4>
+		</article>
 
-                  
-                  <div class="content" id="videoattribution">
-                  <img src="images/notes.png" alt="notes" class="icons">
-                    <div class="overlay">
-                   </div>
-                     <div class="inactive">
-                   </div></div>
-       </aside>
-	
-		<div id="rolling_transcript">
-			
-			<!--<table cellpadding="0" cellspacing="0">
-				
-				<tr class="audioGroup"><td id="tLine0" class="highlighted">
-					<div class="jp"><strong><em>Benshi Narration (Musei)</em></strong></div>
-					<div class="en"><strong>The Cabinet of Dr. Caligari</strong></div>
-				</td></tr>
-				
-				<tr><td id="tLine1">
-					<div class="jp">馬車の窓から覗くと</div>
-					<div class="en">When Francis is peeking in the window</div>
-				</td></tr>
-				
-				<tr><td id="tLine2">
-					<div class="jp">博士は杖にあごを載せて眠っている。</div>
-					<div class="en">the doctor is sleeping with his chin rested on his cane.</div>
-				</td></tr>
-				
-				<tr><td id="tLine3">
-					<div class="jp">棺桶のような箱の中には、例の眠り男のセザーレが確かにおりました</div>
-					<div class="en">The somnambulist Cesaré was surely inside the coffin-like box.</div>
-				</td></tr>
-				
-				<tr><td id="tLine4">
-					<div class="jp">にも関わらず，セザーレとそっくりの怪物が，</div>
-					<div class="en">However, a monster that looks exactly like Cesaré</div>
-				</td></tr>
-				
-				<tr><td id="tLine5">
-					<div class="jp">令嬢の寝室へ忍んで参りました。</div>
-					<div class="en">has just sneaked into Dr. Olsen’s daughter’s bedroom.</div>
-				</td></tr>
-				
-				<tr><td id="tLine6">
-					<div class="jp">鋭利な刃物をぐさりとただ一突き</div>
-					<div class="en">He was going to stab the lady deeply with a sharp dagger</div>
-				</td></tr>
-				
-				<tr><td id="tLine7">
-					<div class="jp">振り上げた瞬間に</div>
-					<div class="en">At the instant Cesaré flung up the knife</div>
-				</td></tr>
-				
-				<tr><td id="tLine8">
-					<div class="jp">セザーレの様子が変になりました。</div>
-					<div class="en">his attitude changed suddenly.</div>
-				</td></tr>
-				
-				<tr><td id="tLine9">
-					<div class="jp">美しい令嬢の寝顔を見た瞬間に</div>
-					<div class="en">At the moment when he saw the face of the beautiful sleeping lady.</div>
-				</td></tr>
-				
-				<tr><td id="tLine10">
-					<div class="jp">セザーレの体にはやはり男性の血が流れていました。</div>
-					<div class="en">After all, the masculine blood was running in Cesaré's body.</div>
-				</td></tr>
-				
-				<tr><td id="tLine11">
-					<div class="jp">思わず手を差し伸べ </div>
-					<div class="en">In spite of himself, he extends his arms.</div>
-				</td></tr>
-				
-				<tr><td id="tLine12">
-					<div class="jp">悲鳴を上げて</div>
-					<div class="en">Screaming!</div>
-				</td></tr>
-				
-				<tr><td id="tLine13">
-					<div class="jp">うち騒ぐ令嬢を軽々と横抱きにいたしまして</div>
-					<div class="en">A screaming daughter! He clasps her to his side with ease.</div>
-				</td></tr>
-				
-				<tr><td id="tLine14">
-					<div class="jp">なんだか </div>
-					<div class="en"><em>What was that?</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine15">
-					<div class="jp">たしかに今，女の悲鳴が</div>
-					<div class="en"><em>Certainly, just now, we heard the scream of a woman.</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine16">
-					<div class="jp">あ！</div>
-					<div class="en"><em>Ah!</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine17">
-					<div class="jp">お嬢さんどうしてる？ </div>
-					<div class="en"><em>How is our young mistress doing?</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine18">
-					<div class="jp">ああ！あすこだ！あすこをいくぞ！</div>
-					<div class="en"><em>Ah! Over there! There he goes!</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine19">
-					<div class="jp">到底普通の人間業とは思えないので </div>
-					<div class="en"><em>There is no way humanly possible!</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine20">
-					<div class="jp">令嬢の体を横抱きにしたまま</div>
-					<div class="en">While clasping the lady to his side</div>
-				</td></tr>
-				
-				<tr><td id="tLine21">
-					<div class="jp">屋根伝いにあやしの者が逃げていきます </div>
-					<div class="en">a strange man is fleeing along the rooftops.</div>
-				</td></tr>
-				
-				<tr><td id="tLine22">
-					<div class="jp">カリガリー博士は相変わらず眠っている</div>
-					<div class="en">Still, Dr. Caligari is sleeping.</div>
-				</td></tr>
-				
-				<tr><td id="tLine23">
-					<div class="jp">眠り男は例の箱の中で眠っている、</div>
-					<div class="en">And the sleeping man is sleeping in that box.</div>
-				</td></tr>
-				
-				<tr><td id="tLine24">
-					<div class="jp">しかるに眠り男とそっくりの怪物が </div>
-					<div class="en">However, a monster that looks just like the sleeping man,</div>
-				</td></tr>
-				
-				<tr><td id="tLine25">
-					<div class="jp">令嬢をさらって逃げ出したのです。</div>
-					<div class="en">he has kidnapped the lady and fled.</em></div>
-				</td></tr>
-				
-				<tr><td id="tLine26">
-					<div class="jp">だが途中まで来ると力つきて </div>
-					<div class="en">But on the way, having run out of steam</div>
-				</td></tr>
-				
-				<tr><td id="tLine27">
-					<div class="jp">その怪物は令嬢を道ばたに、捨てたまま，逃げてしまったのです。</div>
-					<div class="en">the monster deserted the lady and ran away.</div>
-				</td></tr>
-				
-				<tr><td id="tLine28">
-					<div class="jp">なおもしばらく</div>
-					<div class="en">For a little while</div>
-				</td></tr>
-				
-				<tr><td id="tLine29">
-					<div class="jp">セザーレによく似た怪物は </div>
-					<div class="en">the monster that resembled Cesaré was walloping.</div>
-				</td></tr>
-				
-				<tr><td id="tLine30">
-					<div class="jp">ヨタヨタ歩き回っていましたが遂に力つきて倒れてしまった。</div>
-					<div class="en">And he finally lost power and fell down onto the ground.</div>
-				</td></tr>
-				
-			</table>-->
-		</div>
-				        
-   </div>
+		<aside id="sources">
+
+			<h3>Footnotes &amp; Annotations</h3>
+			<img src="images/video.png" alt="video" class="icons">
+			<div class="content" id="footnote"><div class="overlay"></div><div class="inactive"></div></div>
+		</aside>
+
+	</div>
+
+<!-- Start Right Column -->
+
+	<div id="rightcontent">
+
+
+		<aside id="sources">
+			<h4>Transcription</h4>
+
+			<div class="content" id="videoattribution">
+				<img src="images/notes.png" alt="notes" class="icons">
+				<div class="overlay"></div>
+				<div class="inactive">
+				</div>
+			</div>
+		</aside>
+
+		<div id="rolling_transcript"></div>
+
+	</div>
 
 	<aside id="related">
 		<h4>Related Media</h4>
@@ -429,11 +170,12 @@ function displayResult() {
 			<li><a href="files/Waseda_Komada_digitized scripts.xls"><img src="images/metadata_sm.png" alt="Excel Metadata" /></a>Digitized Scripts</li>
 		</ul>
 	</aside>
- <footer>Proof of concept for the <a href="http://www.dhinitiative.org">Digital Humanities Inititiave (DHi)<a/> <img style="float: right;" src="images/dhi_logo.png" /><div style="clear: both"></div></footer>
+	
+	<footer>Proof of concept for the <a href="http://www.dhinitiative.org">Digital Humanities Inititiave (DHi)<a/> <img style="float: right;" src="images/dhi_logo.png" /><div style="clear: both"></div></footer>
+		
 </section>
-        
-      
-  </body>
+
+</body>
 </html>
 
 
