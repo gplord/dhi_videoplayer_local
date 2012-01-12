@@ -5,6 +5,7 @@
 	<timeline>
 
 		<transcripts>
+			
 			<transcript in="00:00:00:00" out="00:00:14:00" tId="0"></transcript>
 			<transcript in="00:00:14:00" out="00:00:18:00" tId="1"></transcript>
 			<transcript in="00:00:20:00" out="00:00:25:00" tId="2"></transcript>
@@ -36,9 +37,10 @@
 			<transcript in="00:03:56:00" out="00:03:57:00" tId="28"></transcript>
 			<transcript in="00:03:57:00" out="00:04:01:30" tId="29"></transcript>
 			<transcript in="00:04:02:00" out="00:04:08:00" tId="30"></transcript>
+			
 		</transcripts>
 
-		<transcriptLines>
+		<transcriptText>
 			
 			<lineGroup id="1">
 				<line lang="en">When Francis is peeking in the window</line>
@@ -160,7 +162,8 @@
 				<line lang="en">And he finally lost power and fell down onto the ground.</line>
 				<line lang="jp">ヨタヨタ歩き回っていましたが遂に力つきて倒れてしまった。</line>
 			</lineGroup>
-		</transcriptLines>
+			
+		</transcriptText>
 
 	</timeline> 
 </popcorn>
