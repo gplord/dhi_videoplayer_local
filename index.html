@@ -19,74 +19,20 @@
 
 <script src="parsers/parserXML/popcorn.parseXML.js"></script>
 
-<script type="text/javascript">
-	// Must come after the video.js library
+<script type="text/javascript" src="js/dhi.xslParseTranscript.js"></script>
+<script type="text/javascript" src="js/dhi.transcriptHighlight.js"></script>
 
+<script type="text/javascript">
+
+	// Must come after the video.js library
 	// Add VideoJS to all video tags on the page when the DOM is ready
 	VideoJS.setupAllWhenReady();
 
-	var highlightedLine = 0;
-
-	function goToLine(num) {
-		$("#tLine"+highlightedLine).toggleClass('highlighted');
-		highlightedLine = num;
-		$("#tLine"+highlightedLine).toggleClass('highlighted');
-		$("#rolling_transcript").scrollTop(0);
-		var pos = $("#tLine"+num).position().top;
-		$("#rolling_transcript").scrollTop(pos);
-	}
-
-	$(function() {
-		$('a.lightbox').lightBox(); // Select all links with lightbox class
-	});
-
 </script>
 
-<script>
-
-	function loadXMLDoc(dname) {
-		if (window.XMLHttpRequest) {
-			xhttp=new XMLHttpRequest();
-		} else {
-			xhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xhttp.open("GET",dname,false);
-		xhttp.send("");
-		return xhttp.responseXML;
-	}
-
-	function displayResult() {
-		xml=loadXMLDoc("datatest.xml");
-		xsl=loadXMLDoc("transcript.xsl");
-
-		// code for IE
-		if (window.ActiveXObject) {
-		ex=xml.transformNode(xsl);
-		document.getElementById("rolling_transcript").innerHTML=ex;
-	}
-
-	// code for Mozilla, Firefox, Opera, etc.
-	else if (document.implementation && document.implementation.createDocument)	{
-		xsltProcessor=new XSLTProcessor();
-		xsltProcessor.importStylesheet(xsl);
-		resultDocument = xsltProcessor.transformToFragment(xml,document);
-		document.getElementById("rolling_transcript").appendChild(resultDocument);
-	}
-
-	// After parsing XML, provide click function for each transcript line group set
-	$(".transcriptLineGroup").click(function() {
-		var timeInMs = this.getAttribute("data-time-in-ms");		
-		var video = document.getElementsByTagName("video")[0];
-		video.currentTime = timeInMs; 
-		video.play();
-	});
-
-}
-
-</script>
 </head>
 
-<body onload="displayResult()">	
+<body onload="displayResult('datatest.xml')">
 
 <section id="wrapper">
 
