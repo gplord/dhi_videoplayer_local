@@ -1,0 +1,48 @@
+<popcorn> 
+	<manifest>
+	</manifest> 
+
+	<timeline>
+
+		<transcripts>
+			
+			<transcript in="00:00:00:00" out="00:00:21:00" tId="0"></transcript>
+			<transcript in="00:00:25:00" out="00:00:34:00" tId="1"></transcript>
+			<transcript in="00:00:37:00" out="00:00:49:00" tId="2"></transcript>
+			<transcript in="00:01:02:00" out="00:01:16:00" tId="3"></transcript>
+			<transcript in="00:01:18:00" out="00:01:35:00" tId="4"></transcript>
+			<transcript in="00:01:37:00" out="00:01:58:00" tId="5"></transcript>
+			
+		</transcripts>
+
+		<transcriptText>
+			
+			<lineGroup id="0">
+				<line lang="en">The Cabinet of Dr. Caligari</line>
+				<line lang="jp">Scene 2</line>
+			</lineGroup>
+			<lineGroup id="1">
+				<line lang="en">When Francis is peeking in the window</line>
+				<line lang="jp">馬車の窓から覗くと</line>
+			</lineGroup>
+			<lineGroup id="2">
+				<line lang="en">the doctor is sleeping with his chin rested on his cane.</line>
+				<line lang="jp">博士は杖にあごを載せて眠っている</line>
+			</lineGroup>
+			<lineGroup id="3">
+				<line lang="en">The somnambulist Cesaré was surely inside the coffin-like box.</line>
+				<line lang="jp">棺桶のような箱の中には、例の眠り男のセザーレが確かにおりました</line>
+			</lineGroup>
+			<lineGroup id="4">
+				<line lang="en">However, a monster that looks exactly like Cesaré</line>
+				<line lang="jp">にも関わらず，セザーレとそっくりの怪物が，</line>
+			</lineGroup>
+			<lineGroup id="5">
+				<line lang="en">has just sneaked into Dr. Olsen’s daughter’s bedroom.</line>
+				<line lang="jp">令嬢の寝室へ忍んで参りました。</line>
+			</lineGroup>
+			
+		</transcriptText>
+
+	</timeline> 
+</popcorn>
