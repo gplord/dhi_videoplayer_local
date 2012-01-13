@@ -11,28 +11,22 @@
 <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
 
-<script src="video.js" type="text/javascript" charset="utf-8"></script>
-<script src="popcorn.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/video.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/popcorn/popcorn.js" type="text/javascript" charset="utf-8"></script>
 
-<script src="plugins/footnote/popcorn.footnote.js"></script>
-<script src="plugins/transcript/popcorn.transcript.js"></script>
+<script src="js/popcorn/plugins/footnote/popcorn.footnote.js"></script>
+<script src="js/popcorn/plugins/transcript/popcorn.transcript.js"></script>
 
-<script src="parsers/parserXML/popcorn.parseXML.js"></script>
+<script src="js/parsers/parserXML/popcorn.parseXML.js"></script>
 
 <script type="text/javascript" src="js/dhi.xsltParseTranscript.js"></script>
 <script type="text/javascript" src="js/dhi.transcriptHighlight.js"></script>
 
-<script type="text/javascript">
-
-	// Must come after the video.js library
-	// Add VideoJS to all video tags on the page when the DOM is ready
-	VideoJS.setupAllWhenReady();
-
-</script>
+<script type="text/javascript" src="js/popcorn/config.js"></script>
 
 </head>
 
-<body onload="displayResult('datatest.xml')">
+<body onload="displayResult('data.xml')">
 
 <section id="wrapper">
 
@@ -40,10 +34,10 @@
 
 		<div id="title">
 			<ul id="nav">
-				<li><a href="about.html">About</a></li>
+				<li><a href="#">About</a></li>
 				<li><a href="index.html">Demo</a></li>
-				<li><a href="team.html">Project Team</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Project Team</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 
@@ -65,9 +59,9 @@
 			<!-- Begin VideoJS -->
 			<div class="video-js-box">
 
-				<video id="video" class="video-js" width="320" height="240" controls="controls" preload="auto" poster="images/poster.jpg" data-timeline-sources="datatest.xml">
-					<source src="caligari_1_vas.mov">
-				</video>  
+			<video id="video" class="video-js" width="320" height="240" controls="controls" preload="auto" poster="images/poster.jpg" data-timeline-sources="data.xml">
+              <source src="http://videos.mozilla.org/serv/webmademovies/wtfpopcorn.ogv" type="video/ogg">
+			</video>  
 
 			</div>
 			<!-- End VideoJS -->
@@ -77,7 +71,6 @@
 		<aside id="sources">
 
 			<h3>Footnotes &amp; Annotations</h3>
-			<img src="images/video.png" alt="video" class="icons">
 			<div class="content" id="footnote"><div class="overlay"></div><div class="inactive"></div></div>
 		</aside>
 
@@ -92,7 +85,6 @@
 			<h4>Transcription</h4>
 
 			<div class="content" id="videoattribution">
-				<img src="images/notes.png" alt="notes" class="icons">
 				<div class="overlay"></div>
 				<div class="inactive">
 				</div>
@@ -105,16 +97,6 @@
 
 	<aside id="related">
 		<h4>Related Media</h4>
-		<ul>
-			<li><a class="lightbox" href="images/TokugawaMusei.jpg" title="Portrait of Tokugawa Musei, Benshi"><img src="images/TokugawaMusei_sm.jpg" alt="Tokugawa Musei Thumbnail" /></a>Tokugawa Musei</li>
-			<li><a href="files/TOKUGAWAMusei.docx"><img src="images/icon_word.png" alt="Tokugawa Musei Biography"></a>Musei Biography</li>
-			<li><a class="lightbox" href="images/benshi_large.png" title="Poster of a Benshi Performer"><img src="images/benshi_small.png" alt="Benshi Thumbnail" /></a>Benshi Poster</li>
-			<li><a class="lightbox" href="images/benshi_chart.png" title="Chart of Benshi Performances"><img src="images/benshi_chart_small.png" alt="Benshi Chart Thumbnail" /></a>Benshi Chart</li>
-			<li><a class="lightbox" href="images/caligari_poster.png" title="Film poster for the Cabinet of Dr. Caligari (Robert Wiene, dir. 1919)"><img src="images/caligari_poster_small.png" alt="Caligari Poster Thumbnail" /></a>Film Poster</li>
-			<li><a href="#"><img src="images/mp3_small.png" alt="Audio MP3" /></a>Japanese Audio</li>
-			<li><a href="files/Omori_Collection_Metadata.xlsx"><img src="images/metadata_sm.png" alt="Excel Metadata" /></a>Download Metadata</li>
-			<li><a href="files/Waseda_Komada_digitized scripts.xls"><img src="images/metadata_sm.png" alt="Excel Metadata" /></a>Digitized Scripts</li>
-		</ul>
 	</aside>
 	
 	<footer>Proof of concept for the <a href="http://www.dhinitiative.org">Digital Humanities Inititiave (DHi)<a/> <img style="float: right;" src="images/dhi_logo.png" /><div style="clear: both"></div></footer>
